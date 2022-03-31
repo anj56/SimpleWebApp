@@ -6,6 +6,6 @@ public class HelloRestController{
   @GetMapping("/Hello")
   public String getmessage()
   {
-    return "Welcome to .......................";
+    return "Welcome to Tomcat Server";
   }
 }
