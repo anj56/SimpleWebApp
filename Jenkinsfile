@@ -18,6 +18,11 @@ pipeline {
                 echo 'publishing'
             }
         }
+        stage('JaCoCo Report') {
+            steps {
+                jacoco()
+            }
+        }
     }
 }
 
