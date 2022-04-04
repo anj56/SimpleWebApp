@@ -9,9 +9,10 @@ pipeline {
         }
          stage('package') {
             steps {
-                echo 'packaging'
+                echo 'mvn clean package'
             }
         }
+         
          stage('publishing') {
             steps {
                 echo 'publishing'
